@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Type Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .form-container {
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        .radio-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+        
+        button {
+            padding: 10px 15px;
+            background-color: #4285F4; /* Google blue */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #357AE8; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Select Employee Type</h2>
+        <form>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="employeeType" value="salaried" required>
+                    Salaried
+                </label>
+                <label>
+                    <input type="radio" name="employeeType" value="ownBusiness">
+                    Own Business
+                </label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
